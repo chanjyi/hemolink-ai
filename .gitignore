@@ -1,0 +1,12 @@
+__pycache__/
+.pytest_cache/
+.venv/
+*.pyc
+*.db
+*.db-*
+models/**/*.joblib
+models/*.joblib
+.env
+hemoscan_reports/
+data_key.txt
+vapid_private.pem

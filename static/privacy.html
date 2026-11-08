@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HemoLink · Privacy notice</title>
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml" />
+  <style>
+    :root { --red: #b3202e; --ink: #3b2a22; --muted: #7a6458; --line: #ecdcc6; --bg: #f7ecdf; --card: #fffaf3; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.65 "DM Sans", "Inter", system-ui, sans-serif; }
+    main { max-width: 820px; margin: 0 auto; padding: 32px 16px 64px; }
+    .card { background: var(--card); border: 1.5px solid var(--line); border-radius: 20px; padding: 28px clamp(18px, 4vw, 36px); }
+    h1 { color: var(--red); font-size: clamp(26px, 5vw, 34px); margin: 0 0 4px; }
+    h2 { font-size: 18px; margin: 26px 0 6px; }
+    .ms { color: var(--muted); font-size: 13.5px; margin-top: 2px; }
+    .meta { color: var(--muted); font-size: 13px; }
+    .note { background: #fff6ea; border: 1px solid #f0dcc0; border-radius: 12px; padding: 10px 14px; font-size: 13.5px; margin: 16px 0; }
+    ul { padding-left: 20px; margin: 6px 0; }
+    li { margin: 3px 0; }
+    a { color: var(--red); }
+    table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin-top: 6px; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .04em; }
+    .back { display: inline-block; margin-bottom: 14px; font-weight: 600; text-decoration: none; }
+    @media (max-width: 560px) { th:nth-child(3), td:nth-child(3) { display: none; } }
+  </style>
+</head>
+<body>
+<main>
+  <a class="back" href="/">← Back to HemoLink</a>
+  <div class="card">
+    <h1>Privacy notice</h1>
+    <div class="ms">Notis privasi · Akta Perlindungan Data Peribadi 2010</div>
+    <p class="meta">Version 2026-11-08 · HemoLink AI (student hackathon prototype)</p>
+    <div class="note"><b>Prototype.</b> HemoLink AI is a student project for DSH Hacks V2. Please don't enter real health
+      information on a public demo. Before real use, this notice must be reviewed by the operating blood bank and a
+      PDPA adviser. <span class="ms">Prototaip — jangan masukkan maklumat kesihatan sebenar pada demo awam.</span></div>
+
+    <h2>1. What we collect · <span class="ms">Data yang dikumpul</span></h2>
+    <table>
+      <tr><th>Data</th><th>Why</th><th>Who can see it</th></tr>
+      <tr><td>Name, email, password (stored only as a one-way hash)</td><td>Your account</td><td>You; admins see name and email</td></tr>
+      <tr><td>Blood type, city, birth year, weight, sex (optional)</td><td>Eligibility check, matching you to urgent requests, distance to drives</td><td>You; admins see blood type and area when matching</td></tr>
+      <tr><td>Bookings, donations, replies to urgent requests, feedback</td><td>Running drives and keeping stock safe</td><td>You; the drive organizer sees bookings for their drives</td></tr>
+      <tr><td>Phone number, alert choices, push device</td><td>Sending the alerts you turned on</td><td>You; admins see masked numbers in the delivery log</td></tr>
+      <tr><td>HemoScan reports and HemoCare medicine list (health data)</td><td>Explaining your own results and preparing for donation</td><td><b>Only you</b> — not organizers, not admins</td></tr>
+    </table>
+
+    <h2>2. Your choices · <span class="ms">Pilihan anda</span></h2>
+    <ul>
+      <li>Blood type, birth year, weight, sex, phone and HemoScan are optional. Without them some features won't work.</li>
+      <li>Email, SMS, push and "new drives near me" alerts can each be switched off in <b>My Profile → Alerts &amp; language</b>.</li>
+      <li>HemoScan asks for your agreement every time you upload a report. We keep a record of what you agreed to and when.</li>
+    </ul>
+
+    <h2>3. Who we share it with · <span class="ms">Pendedahan</span></h2>
+    <ul>
+      <li>We don't sell your data or use it for advertising.</li>
+      <li>Service providers only when you turn the feature on: the email provider, SMS provider (Twilio) and your browser's push service carry your messages; the AI provider (if the operator sets one) receives your first name, your question and the report values or donation status it needs to answer — never your full name, email, phone or location.</li>
+      <li>Map tiles and "Find venue on map" use OpenStreetMap, which sees your IP address like any website you visit.</li>
+    </ul>
+
+    <h2>4. How we protect it · <span class="ms">Keselamatan</span></h2>
+    <ul>
+      <li>Uploaded blood test files are encrypted on the server. Passwords are hashed (PBKDF2, 310,000 rounds).</li>
+      <li>Signed session cookies (HTTPS-only in production), a strict content security policy, rate limits and a 15-minute lock after 5 wrong passwords.</li>
+      <li>Role checks on every request: organizers and admins can't open anyone's HemoScan reports or medicine list.</li>
+    </ul>
+
+    <h2>5. How long we keep it · <span class="ms">Penyimpanan</span></h2>
+    <ul>
+      <li>Original report files: deleted automatically after 12 months (the values you confirmed stay so you can see trends). Delete any report yourself at any time.</li>
+      <li>Message delivery log: 90 days.</li>
+      <li>Everything else: until you delete your account.</li>
+    </ul>
+
+    <h2>6. Your rights · <span class="ms">Hak anda</span></h2>
+    <ul>
+      <li><b>See and copy your data</b> — My Profile → <i>Download my data</i> (a JSON file).</li>
+      <li><b>Correct it</b> — edit your profile, medicine list or report values at any time.</li>
+      <li><b>Delete it</b> — My Profile → <i>Delete my account</i> removes your account, bookings, donation history, reports and medicines.</li>
+      <li><b>Withdraw consent</b> — turn alerts off, delete reports, or delete your account.</li>
+    </ul>
+
+    <h2>7. Contact · <span class="ms">Hubungi</span></h2>
+    <p>Questions or requests: the blood bank running this HemoLink service. For this prototype, contact the HemoLink team at
+      the email shown on the project page.</p>
+  </div>
+</main>
+</body>
+</html>

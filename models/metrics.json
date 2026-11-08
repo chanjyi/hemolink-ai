@@ -1,0 +1,1734 @@
+{
+ "trained": "2026-11-08T01:19",
+ "data_file": "donations_state.csv",
+ "forecasts": [
+  {
+   "region": "Malaysia",
+   "group": "all",
+   "selected": "rf",
+   "mae": 163.76,
+   "baseline_mae": 233.86,
+   "candidates": {
+    "seasonal_naive": 233.86,
+    "weekday_mean": 198.55,
+    "rf": 163.76
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Malaysia",
+   "group": "A",
+   "selected": "rf",
+   "mae": 44.09,
+   "baseline_mae": 68.61,
+   "candidates": {
+    "seasonal_naive": 68.61,
+    "weekday_mean": 54.04,
+    "rf": 44.09
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Malaysia",
+   "group": "B",
+   "selected": "rf",
+   "mae": 47.71,
+   "baseline_mae": 68.04,
+   "candidates": {
+    "seasonal_naive": 68.04,
+    "weekday_mean": 57.41,
+    "rf": 47.71
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Malaysia",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 13.63,
+   "baseline_mae": 21.23,
+   "candidates": {
+    "seasonal_naive": 21.23,
+    "weekday_mean": 16.87,
+    "rf": 13.63
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Malaysia",
+   "group": "O",
+   "selected": "rf",
+   "mae": 74.75,
+   "baseline_mae": 102.48,
+   "candidates": {
+    "seasonal_naive": 102.48,
+    "weekday_mean": 85.24,
+    "rf": 74.75
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Johor",
+   "group": "all",
+   "selected": "rf",
+   "mae": 32.75,
+   "baseline_mae": 42.93,
+   "candidates": {
+    "seasonal_naive": 42.93,
+    "weekday_mean": 36.35,
+    "rf": 32.75
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Johor",
+   "group": "A",
+   "selected": "rf",
+   "mae": 8.82,
+   "baseline_mae": 13.05,
+   "candidates": {
+    "seasonal_naive": 13.05,
+    "weekday_mean": 9.8,
+    "rf": 8.82
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Johor",
+   "group": "B",
+   "selected": "rf",
+   "mae": 9.48,
+   "baseline_mae": 13.79,
+   "candidates": {
+    "seasonal_naive": 13.79,
+    "weekday_mean": 10.49,
+    "rf": 9.48
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Johor",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 3.1,
+   "baseline_mae": 4.29,
+   "candidates": {
+    "seasonal_naive": 4.29,
+    "weekday_mean": 3.65,
+    "rf": 3.1
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Johor",
+   "group": "O",
+   "selected": "rf",
+   "mae": 15.49,
+   "baseline_mae": 20.59,
+   "candidates": {
+    "seasonal_naive": 20.59,
+    "weekday_mean": 17.27,
+    "rf": 15.49
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kedah",
+   "group": "all",
+   "selected": "rf",
+   "mae": 26.08,
+   "baseline_mae": 33.32,
+   "candidates": {
+    "seasonal_naive": 33.32,
+    "weekday_mean": 31.0,
+    "rf": 26.08
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kedah",
+   "group": "A",
+   "selected": "rf",
+   "mae": 7.95,
+   "baseline_mae": 9.34,
+   "candidates": {
+    "seasonal_naive": 9.34,
+    "weekday_mean": 8.14,
+    "rf": 7.95
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kedah",
+   "group": "B",
+   "selected": "rf",
+   "mae": 7.67,
+   "baseline_mae": 10.04,
+   "candidates": {
+    "seasonal_naive": 10.04,
+    "weekday_mean": 8.81,
+    "rf": 7.67
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kedah",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 1.97,
+   "baseline_mae": 2.75,
+   "candidates": {
+    "seasonal_naive": 2.75,
+    "weekday_mean": 2.38,
+    "rf": 1.97
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kedah",
+   "group": "O",
+   "selected": "rf",
+   "mae": 12.87,
+   "baseline_mae": 16.34,
+   "candidates": {
+    "seasonal_naive": 16.34,
+    "weekday_mean": 14.55,
+    "rf": 12.87
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kelantan",
+   "group": "all",
+   "selected": "rf",
+   "mae": 28.2,
+   "baseline_mae": 37.39,
+   "candidates": {
+    "seasonal_naive": 37.39,
+    "weekday_mean": 30.15,
+    "rf": 28.2
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kelantan",
+   "group": "A",
+   "selected": "rf",
+   "mae": 7.86,
+   "baseline_mae": 11.27,
+   "candidates": {
+    "seasonal_naive": 11.27,
+    "weekday_mean": 8.35,
+    "rf": 7.86
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kelantan",
+   "group": "B",
+   "selected": "rf",
+   "mae": 7.09,
+   "baseline_mae": 10.16,
+   "candidates": {
+    "seasonal_naive": 10.16,
+    "weekday_mean": 8.07,
+    "rf": 7.09
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kelantan",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 2.07,
+   "baseline_mae": 3.46,
+   "candidates": {
+    "seasonal_naive": 3.46,
+    "weekday_mean": 2.46,
+    "rf": 2.07
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Kelantan",
+   "group": "O",
+   "selected": "rf",
+   "mae": 11.32,
+   "baseline_mae": 15.86,
+   "candidates": {
+    "seasonal_naive": 15.86,
+    "weekday_mean": 12.87,
+    "rf": 11.32
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Melaka",
+   "group": "all",
+   "selected": "rf",
+   "mae": 35.68,
+   "baseline_mae": 52.32,
+   "candidates": {
+    "seasonal_naive": 52.32,
+    "weekday_mean": 43.3,
+    "rf": 35.68
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Melaka",
+   "group": "A",
+   "selected": "rf",
+   "mae": 9.65,
+   "baseline_mae": 12.39,
+   "candidates": {
+    "seasonal_naive": 12.39,
+    "weekday_mean": 11.3,
+    "rf": 9.65
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Melaka",
+   "group": "B",
+   "selected": "rf",
+   "mae": 10.71,
+   "baseline_mae": 15.75,
+   "candidates": {
+    "seasonal_naive": 15.75,
+    "weekday_mean": 12.77,
+    "rf": 10.71
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Melaka",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 3.18,
+   "baseline_mae": 5.18,
+   "candidates": {
+    "seasonal_naive": 5.18,
+    "weekday_mean": 3.71,
+    "rf": 3.18
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Melaka",
+   "group": "O",
+   "selected": "rf",
+   "mae": 15.52,
+   "baseline_mae": 23.14,
+   "candidates": {
+    "seasonal_naive": 23.14,
+    "weekday_mean": 18.24,
+    "rf": 15.52
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Negeri Sembilan",
+   "group": "all",
+   "selected": "rf",
+   "mae": 24.5,
+   "baseline_mae": 34.66,
+   "candidates": {
+    "seasonal_naive": 34.66,
+    "weekday_mean": 28.33,
+    "rf": 24.5
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Negeri Sembilan",
+   "group": "A",
+   "selected": "rf",
+   "mae": 6.59,
+   "baseline_mae": 8.39,
+   "candidates": {
+    "seasonal_naive": 8.39,
+    "weekday_mean": 6.89,
+    "rf": 6.59
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Negeri Sembilan",
+   "group": "B",
+   "selected": "rf",
+   "mae": 6.8,
+   "baseline_mae": 9.89,
+   "candidates": {
+    "seasonal_naive": 9.89,
+    "weekday_mean": 8.41,
+    "rf": 6.8
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Negeri Sembilan",
+   "group": "AB",
+   "selected": "weekday_mean",
+   "mae": 2.08,
+   "baseline_mae": 2.23,
+   "candidates": {
+    "seasonal_naive": 2.23,
+    "weekday_mean": 2.08,
+    "rf": 2.16
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Negeri Sembilan",
+   "group": "O",
+   "selected": "rf",
+   "mae": 10.89,
+   "baseline_mae": 16.07,
+   "candidates": {
+    "seasonal_naive": 16.07,
+    "weekday_mean": 12.79,
+    "rf": 10.89
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pahang",
+   "group": "all",
+   "selected": "rf",
+   "mae": 23.38,
+   "baseline_mae": 34.7,
+   "candidates": {
+    "seasonal_naive": 34.7,
+    "weekday_mean": 28.62,
+    "rf": 23.38
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pahang",
+   "group": "A",
+   "selected": "rf",
+   "mae": 6.98,
+   "baseline_mae": 10.52,
+   "candidates": {
+    "seasonal_naive": 10.52,
+    "weekday_mean": 8.66,
+    "rf": 6.98
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pahang",
+   "group": "B",
+   "selected": "rf",
+   "mae": 6.99,
+   "baseline_mae": 10.04,
+   "candidates": {
+    "seasonal_naive": 10.04,
+    "weekday_mean": 8.2,
+    "rf": 6.99
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pahang",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 2.09,
+   "baseline_mae": 2.39,
+   "candidates": {
+    "seasonal_naive": 2.39,
+    "weekday_mean": 2.38,
+    "rf": 2.09
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pahang",
+   "group": "O",
+   "selected": "rf",
+   "mae": 10.09,
+   "baseline_mae": 15.64,
+   "candidates": {
+    "seasonal_naive": 15.64,
+    "weekday_mean": 11.57,
+    "rf": 10.09
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Perak",
+   "group": "all",
+   "selected": "rf",
+   "mae": 33.56,
+   "baseline_mae": 52.46,
+   "candidates": {
+    "seasonal_naive": 52.46,
+    "weekday_mean": 36.04,
+    "rf": 33.56
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Perak",
+   "group": "A",
+   "selected": "rf",
+   "mae": 9.3,
+   "baseline_mae": 13.25,
+   "candidates": {
+    "seasonal_naive": 13.25,
+    "weekday_mean": 9.66,
+    "rf": 9.3
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Perak",
+   "group": "B",
+   "selected": "rf",
+   "mae": 9.95,
+   "baseline_mae": 14.16,
+   "candidates": {
+    "seasonal_naive": 14.16,
+    "weekday_mean": 10.21,
+    "rf": 9.95
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Perak",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 2.98,
+   "baseline_mae": 4.32,
+   "candidates": {
+    "seasonal_naive": 4.32,
+    "weekday_mean": 3.53,
+    "rf": 2.98
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Perak",
+   "group": "O",
+   "selected": "rf",
+   "mae": 14.57,
+   "baseline_mae": 23.7,
+   "candidates": {
+    "seasonal_naive": 23.7,
+    "weekday_mean": 16.58,
+    "rf": 14.57
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pulau Pinang",
+   "group": "all",
+   "selected": "weekday_mean",
+   "mae": 33.79,
+   "baseline_mae": 44.12,
+   "candidates": {
+    "seasonal_naive": 44.12,
+    "weekday_mean": 33.79,
+    "rf": 35.09
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pulau Pinang",
+   "group": "A",
+   "selected": "rf",
+   "mae": 10.1,
+   "baseline_mae": 12.61,
+   "candidates": {
+    "seasonal_naive": 12.61,
+    "weekday_mean": 10.62,
+    "rf": 10.1
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pulau Pinang",
+   "group": "B",
+   "selected": "rf",
+   "mae": 9.45,
+   "baseline_mae": 12.64,
+   "candidates": {
+    "seasonal_naive": 12.64,
+    "weekday_mean": 10.17,
+    "rf": 9.45
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pulau Pinang",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 3.38,
+   "baseline_mae": 4.59,
+   "candidates": {
+    "seasonal_naive": 4.59,
+    "weekday_mean": 3.81,
+    "rf": 3.38
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Pulau Pinang",
+   "group": "O",
+   "selected": "weekday_mean",
+   "mae": 14.25,
+   "baseline_mae": 18.43,
+   "candidates": {
+    "seasonal_naive": 18.43,
+    "weekday_mean": 14.25,
+    "rf": 14.48
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sabah",
+   "group": "all",
+   "selected": "rf",
+   "mae": 32.13,
+   "baseline_mae": 47.02,
+   "candidates": {
+    "seasonal_naive": 47.02,
+    "weekday_mean": 39.7,
+    "rf": 32.13
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sabah",
+   "group": "A",
+   "selected": "rf",
+   "mae": 12.22,
+   "baseline_mae": 14.25,
+   "candidates": {
+    "seasonal_naive": 14.25,
+    "weekday_mean": 12.65,
+    "rf": 12.22
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sabah",
+   "group": "B",
+   "selected": "rf",
+   "mae": 9.74,
+   "baseline_mae": 13.43,
+   "candidates": {
+    "seasonal_naive": 13.43,
+    "weekday_mean": 11.29,
+    "rf": 9.74
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sabah",
+   "group": "AB",
+   "selected": "weekday_mean",
+   "mae": 2.69,
+   "baseline_mae": 3.8,
+   "candidates": {
+    "seasonal_naive": 3.8,
+    "weekday_mean": 2.69,
+    "rf": 2.74
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sabah",
+   "group": "O",
+   "selected": "weekday_mean",
+   "mae": 17.48,
+   "baseline_mae": 20.29,
+   "candidates": {
+    "seasonal_naive": 20.29,
+    "weekday_mean": 17.48,
+    "rf": 17.22
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sarawak",
+   "group": "all",
+   "selected": "rf",
+   "mae": 25.25,
+   "baseline_mae": 34.52,
+   "candidates": {
+    "seasonal_naive": 34.52,
+    "weekday_mean": 27.53,
+    "rf": 25.25
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sarawak",
+   "group": "A",
+   "selected": "rf",
+   "mae": 7.3,
+   "baseline_mae": 9.84,
+   "candidates": {
+    "seasonal_naive": 9.84,
+    "weekday_mean": 7.96,
+    "rf": 7.3
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sarawak",
+   "group": "B",
+   "selected": "rf",
+   "mae": 7.86,
+   "baseline_mae": 10.14,
+   "candidates": {
+    "seasonal_naive": 10.14,
+    "weekday_mean": 8.37,
+    "rf": 7.86
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sarawak",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 3.31,
+   "baseline_mae": 4.36,
+   "candidates": {
+    "seasonal_naive": 4.36,
+    "weekday_mean": 3.73,
+    "rf": 3.31
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Sarawak",
+   "group": "O",
+   "selected": "rf",
+   "mae": 11.06,
+   "baseline_mae": 15.43,
+   "candidates": {
+    "seasonal_naive": 15.43,
+    "weekday_mean": 12.78,
+    "rf": 11.06
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Selangor",
+   "group": "all",
+   "selected": "weekday_mean",
+   "mae": 37.22,
+   "baseline_mae": 53.07,
+   "candidates": {
+    "seasonal_naive": 53.07,
+    "weekday_mean": 37.22,
+    "rf": 37.04
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Selangor",
+   "group": "A",
+   "selected": "rf",
+   "mae": 10.06,
+   "baseline_mae": 14.23,
+   "candidates": {
+    "seasonal_naive": 14.23,
+    "weekday_mean": 10.34,
+    "rf": 10.06
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Selangor",
+   "group": "B",
+   "selected": "weekday_mean",
+   "mae": 10.42,
+   "baseline_mae": 14.48,
+   "candidates": {
+    "seasonal_naive": 14.48,
+    "weekday_mean": 10.42,
+    "rf": 10.45
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Selangor",
+   "group": "AB",
+   "selected": "weekday_mean",
+   "mae": 2.54,
+   "baseline_mae": 3.04,
+   "candidates": {
+    "seasonal_naive": 3.04,
+    "weekday_mean": 2.54,
+    "rf": 2.73
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Selangor",
+   "group": "O",
+   "selected": "weekday_mean",
+   "mae": 16.55,
+   "baseline_mae": 23.96,
+   "candidates": {
+    "seasonal_naive": 23.96,
+    "weekday_mean": 16.55,
+    "rf": 17.93
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Terengganu",
+   "group": "all",
+   "selected": "rf",
+   "mae": 23.3,
+   "baseline_mae": 31.84,
+   "candidates": {
+    "seasonal_naive": 31.84,
+    "weekday_mean": 23.83,
+    "rf": 23.3
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Terengganu",
+   "group": "A",
+   "selected": "rf",
+   "mae": 6.4,
+   "baseline_mae": 9.02,
+   "candidates": {
+    "seasonal_naive": 9.02,
+    "weekday_mean": 6.7,
+    "rf": 6.4
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Terengganu",
+   "group": "B",
+   "selected": "rf",
+   "mae": 6.71,
+   "baseline_mae": 9.23,
+   "candidates": {
+    "seasonal_naive": 9.23,
+    "weekday_mean": 6.89,
+    "rf": 6.71
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Terengganu",
+   "group": "AB",
+   "selected": "weekday_mean",
+   "mae": 2.22,
+   "baseline_mae": 2.89,
+   "candidates": {
+    "seasonal_naive": 2.89,
+    "weekday_mean": 2.22,
+    "rf": 2.22
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "Terengganu",
+   "group": "O",
+   "selected": "rf",
+   "mae": 10.75,
+   "baseline_mae": 14.2,
+   "candidates": {
+    "seasonal_naive": 14.2,
+    "weekday_mean": 11.12,
+    "rf": 10.75
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "W.P. Kuala Lumpur",
+   "group": "all",
+   "selected": "weekday_mean",
+   "mae": 95.34,
+   "baseline_mae": 128.07,
+   "candidates": {
+    "seasonal_naive": 128.07,
+    "weekday_mean": 95.34,
+    "rf": 101.33
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "W.P. Kuala Lumpur",
+   "group": "A",
+   "selected": "weekday_mean",
+   "mae": 29.24,
+   "baseline_mae": 38.8,
+   "candidates": {
+    "seasonal_naive": 38.8,
+    "weekday_mean": 29.24,
+    "rf": 29.6
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "W.P. Kuala Lumpur",
+   "group": "B",
+   "selected": "weekday_mean",
+   "mae": 27.83,
+   "baseline_mae": 34.07,
+   "candidates": {
+    "seasonal_naive": 34.07,
+    "weekday_mean": 27.83,
+    "rf": 27.64
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "W.P. Kuala Lumpur",
+   "group": "AB",
+   "selected": "rf",
+   "mae": 6.95,
+   "baseline_mae": 12.54,
+   "candidates": {
+    "seasonal_naive": 12.54,
+    "weekday_mean": 10.1,
+    "rf": 6.95
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  },
+  {
+   "region": "W.P. Kuala Lumpur",
+   "group": "O",
+   "selected": "rf",
+   "mae": 38.36,
+   "baseline_mae": 52.73,
+   "candidates": {
+    "seasonal_naive": 52.73,
+    "weekday_mean": 40.41,
+    "rf": 38.36
+   },
+   "folds": 8,
+   "official": true,
+   "last": "2026-10-28"
+  }
+ ],
+ "stock": [
+  {
+   "blood_type": "O+",
+   "used": {
+    "mae": 2.44,
+    "mae_sd": 0.6,
+    "rmse": 3.01,
+    "baseline_mae": 2.79,
+    "test_samples": 28,
+    "selected": "weekday_mean",
+    "selected_label": "Average of the last 4 same weekdays",
+    "candidates": {
+     "seasonal_naive": 2.79,
+     "weekday_mean": 2.44,
+     "rf": 2.82
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   },
+   "collected": {
+    "mae": 2.62,
+    "mae_sd": 0.6,
+    "rmse": 3.3,
+    "baseline_mae": 4.39,
+    "test_samples": 28,
+    "selected": "rf",
+    "selected_label": "Random Forest (65 trees, lag + calendar features)",
+    "candidates": {
+     "seasonal_naive": 4.39,
+     "weekday_mean": 2.95,
+     "rf": 2.62
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   }
+  },
+  {
+   "blood_type": "O-",
+   "used": {
+    "mae": 0.28,
+    "mae_sd": 0.07,
+    "rmse": 0.37,
+    "baseline_mae": 0.36,
+    "test_samples": 28,
+    "selected": "rf",
+    "selected_label": "Random Forest (65 trees, lag + calendar features)",
+    "candidates": {
+     "seasonal_naive": 0.36,
+     "weekday_mean": 0.29,
+     "rf": 0.28
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   },
+   "collected": {
+    "mae": 0.29,
+    "mae_sd": 0.27,
+    "rmse": 0.48,
+    "baseline_mae": 0.29,
+    "test_samples": 28,
+    "selected": "seasonal_naive",
+    "selected_label": "Same weekday last week (seasonal naive)",
+    "candidates": {
+     "seasonal_naive": 0.29,
+     "weekday_mean": 0.51,
+     "rf": 0.36
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   }
+  },
+  {
+   "blood_type": "A+",
+   "used": {
+    "mae": 1.42,
+    "mae_sd": 0.15,
+    "rmse": 1.72,
+    "baseline_mae": 2.0,
+    "test_samples": 28,
+    "selected": "rf",
+    "selected_label": "Random Forest (65 trees, lag + calendar features)",
+    "candidates": {
+     "seasonal_naive": 2.0,
+     "weekday_mean": 1.51,
+     "rf": 1.42
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   },
+   "collected": {
+    "mae": 1.84,
+    "mae_sd": 0.36,
+    "rmse": 2.28,
+    "baseline_mae": 2.36,
+    "test_samples": 28,
+    "selected": "rf",
+    "selected_label": "Random Forest (65 trees, lag + calendar features)",
+    "candidates": {
+     "seasonal_naive": 2.36,
+     "weekday_mean": 2.05,
+     "rf": 1.84
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   }
+  },
+  {
+   "blood_type": "A-",
+   "used": {
+    "mae": 0.0,
+    "mae_sd": 0.0,
+    "rmse": 0.0,
+    "baseline_mae": 0.0,
+    "test_samples": 28,
+    "selected": "seasonal_naive",
+    "selected_label": "Same weekday last week (seasonal naive)",
+    "candidates": {
+     "seasonal_naive": 0.0,
+     "weekday_mean": 0.0,
+     "rf": 0.0
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   },
+   "collected": {
+    "mae": 0.0,
+    "mae_sd": 0.0,
+    "rmse": 0.0,
+    "baseline_mae": 0.0,
+    "test_samples": 28,
+    "selected": "seasonal_naive",
+    "selected_label": "Same weekday last week (seasonal naive)",
+    "candidates": {
+     "seasonal_naive": 0.0,
+     "weekday_mean": 0.0,
+     "rf": 0.01
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   }
+  },
+  {
+   "blood_type": "B+",
+   "used": {
+    "mae": 1.58,
+    "mae_sd": 0.7,
+    "rmse": 1.97,
+    "baseline_mae": 2.79,
+    "test_samples": 28,
+    "selected": "rf",
+    "selected_label": "Random Forest (65 trees, lag + calendar features)",
+    "candidates": {
+     "seasonal_naive": 2.79,
+     "weekday_mean": 1.94,
+     "rf": 1.58
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   },
+   "collected": {
+    "mae": 1.72,
+    "mae_sd": 0.65,
+    "rmse": 2.1,
+    "baseline_mae": 2.64,
+    "test_samples": 28,
+    "selected": "rf",
+    "selected_label": "Random Forest (65 trees, lag + calendar features)",
+    "candidates": {
+     "seasonal_naive": 2.64,
+     "weekday_mean": 2.18,
+     "rf": 1.72
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   }
+  },
+  {
+   "blood_type": "B-",
+   "used": {
+    "mae": 0.0,
+    "mae_sd": 0.0,
+    "rmse": 0.0,
+    "baseline_mae": 0.0,
+    "test_samples": 28,
+    "selected": "seasonal_naive",
+    "selected_label": "Same weekday last week (seasonal naive)",
+    "candidates": {
+     "seasonal_naive": 0.0,
+     "weekday_mean": 0.0,
+     "rf": 0.0
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   },
+   "collected": {
+    "mae": 0.06,
+    "mae_sd": 0.05,
+    "rmse": 0.17,
+    "baseline_mae": 0.07,
+    "test_samples": 28,
+    "selected": "weekday_mean",
+    "selected_label": "Average of the last 4 same weekdays",
+    "candidates": {
+     "seasonal_naive": 0.07,
+     "weekday_mean": 0.06,
+     "rf": 0.13
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   }
+  },
+  {
+   "blood_type": "AB+",
+   "used": {
+    "mae": 0.36,
+    "mae_sd": 0.07,
+    "rmse": 0.59,
+    "baseline_mae": 0.36,
+    "test_samples": 28,
+    "selected": "seasonal_naive",
+    "selected_label": "Same weekday last week (seasonal naive)",
+    "candidates": {
+     "seasonal_naive": 0.36,
+     "weekday_mean": 0.45,
+     "rf": 0.47
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   },
+   "collected": {
+    "mae": 0.5,
+    "mae_sd": 0.15,
+    "rmse": 0.63,
+    "baseline_mae": 0.54,
+    "test_samples": 28,
+    "selected": "rf",
+    "selected_label": "Random Forest (65 trees, lag + calendar features)",
+    "candidates": {
+     "seasonal_naive": 0.54,
+     "weekday_mean": 0.54,
+     "rf": 0.5
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   }
+  },
+  {
+   "blood_type": "AB-",
+   "used": {
+    "mae": 0.0,
+    "mae_sd": 0.0,
+    "rmse": 0.0,
+    "baseline_mae": 0.0,
+    "test_samples": 28,
+    "selected": "seasonal_naive",
+    "selected_label": "Same weekday last week (seasonal naive)",
+    "candidates": {
+     "seasonal_naive": 0.0,
+     "weekday_mean": 0.0,
+     "rf": 0.0
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   },
+   "collected": {
+    "mae": 0.0,
+    "mae_sd": 0.0,
+    "rmse": 0.0,
+    "baseline_mae": 0.0,
+    "test_samples": 28,
+    "selected": "seasonal_naive",
+    "selected_label": "Same weekday last week (seasonal naive)",
+    "candidates": {
+     "seasonal_naive": 0.0,
+     "weekday_mean": 0.0,
+     "rf": 0.0
+    },
+    "validation": "Rolling-origin cross-validation \u00b7 4 cut-off dates \u00d7 7-day forecasts"
+   }
+  }
+ ],
+ "return_model": {
+  "available": true,
+  "n": 256,
+  "folds": 5,
+  "base_rate": 0.309,
+  "auc": 0.845,
+  "auc_sd": 0.036,
+  "accuracy": 0.774,
+  "brier": 0.145,
+  "brier_baseline": 0.213,
+  "calibration": [
+   {
+    "bin": "0\u201320%",
+    "n": 105,
+    "predicted": 0.054,
+    "actual": 0.019
+   },
+   {
+    "bin": "20\u201340%",
+    "n": 47,
+    "predicted": 0.292,
+    "actual": 0.255
+   },
+   {
+    "bin": "40\u201360%",
+    "n": 65,
+    "predicted": 0.511,
+    "actual": 0.646
+   },
+   {
+    "bin": "60\u201380%",
+    "n": 39,
+    "predicted": 0.678,
+    "actual": 0.59
+   },
+   {
+    "bin": "80\u2013100%",
+    "n": 0,
+    "predicted": null,
+    "actual": null
+   }
+  ],
+  "by_age": [
+   {
+    "group": "17\u201324",
+    "n": 23,
+    "actual_rate": 0.261,
+    "predicted_rate": 0.286,
+    "auc": 0.98,
+    "gap": 0.025
+   },
+   {
+    "group": "25\u201334",
+    "n": 63,
+    "actual_rate": 0.302,
+    "predicted_rate": 0.301,
+    "auc": 0.834,
+    "gap": -0.001
+   },
+   {
+    "group": "35\u201344",
+    "n": 74,
+    "actual_rate": 0.297,
+    "predicted_rate": 0.298,
+    "auc": 0.817,
+    "gap": 0.0
+   },
+   {
+    "group": "45\u201354",
+    "n": 64,
+    "actual_rate": 0.328,
+    "predicted_rate": 0.317,
+    "auc": 0.827,
+    "gap": -0.011
+   },
+   {
+    "group": "55+",
+    "n": 32,
+    "actual_rate": 0.344,
+    "predicted_rate": 0.35,
+    "auc": 0.922,
+    "gap": 0.007
+   }
+  ],
+  "by_area": [
+   {
+    "group": "Ampang",
+    "n": 26,
+    "actual_rate": 0.269,
+    "predicted_rate": 0.315,
+    "auc": 0.85,
+    "gap": 0.046
+   },
+   {
+    "group": "Cheras",
+    "n": 21,
+    "actual_rate": 0.381,
+    "predicted_rate": 0.311,
+    "auc": 0.923,
+    "gap": -0.07
+   },
+   {
+    "group": "Cyberjaya",
+    "n": 26,
+    "actual_rate": 0.346,
+    "predicted_rate": 0.302,
+    "auc": 0.935,
+    "gap": -0.044
+   },
+   {
+    "group": "Kajang",
+    "n": 25,
+    "actual_rate": 0.36,
+    "predicted_rate": 0.406,
+    "auc": 0.681,
+    "gap": 0.046
+   },
+   {
+    "group": "Klang",
+    "n": 28,
+    "actual_rate": 0.214,
+    "predicted_rate": 0.27,
+    "auc": 0.962,
+    "gap": 0.056
+   },
+   {
+    "group": "Kuala Lumpur",
+    "n": 22,
+    "actual_rate": 0.318,
+    "predicted_rate": 0.287,
+    "auc": 0.905,
+    "gap": -0.032
+   },
+   {
+    "group": "Petaling Jaya",
+    "n": 22,
+    "actual_rate": 0.273,
+    "predicted_rate": 0.291,
+    "auc": 0.719,
+    "gap": 0.019
+   },
+   {
+    "group": "Putrajaya",
+    "n": 22,
+    "actual_rate": 0.182,
+    "predicted_rate": 0.253,
+    "auc": 0.778,
+    "gap": 0.071
+   },
+   {
+    "group": "Seri Kembangan",
+    "n": 14,
+    "actual_rate": 0.214,
+    "predicted_rate": 0.203,
+    "auc": 0.97,
+    "gap": -0.011
+   },
+   {
+    "group": "Setapak",
+    "n": 22,
+    "actual_rate": 0.409,
+    "predicted_rate": 0.327,
+    "auc": 0.744,
+    "gap": -0.082
+   },
+   {
+    "group": "Shah Alam",
+    "n": 15,
+    "actual_rate": 0.467,
+    "predicted_rate": 0.373,
+    "auc": 0.911,
+    "gap": -0.094
+   },
+   {
+    "group": "Subang Jaya",
+    "n": 13,
+    "actual_rate": 0.308,
+    "predicted_rate": 0.374,
+    "auc": 0.806,
+    "gap": 0.066
+   }
+  ],
+  "flags": []
+ },
+ "matching": {
+  "requests_simulated": 40,
+  "units_per_request": 4,
+  "by_age": [
+   {
+    "group": "17\u201324",
+    "eligible": 428,
+    "selected": 97,
+    "rate": 0.227,
+    "avg_km": 16.5,
+    "avg_donations": 1.7,
+    "ratio": 1.0,
+    "flag": false
+   },
+   {
+    "group": "25\u201334",
+    "eligible": 813,
+    "selected": 173,
+    "rate": 0.213,
+    "avg_km": 16.7,
+    "avg_donations": 2.2,
+    "ratio": 0.94,
+    "flag": false
+   },
+   {
+    "group": "35\u201344",
+    "eligible": 1121,
+    "selected": 232,
+    "rate": 0.207,
+    "avg_km": 17.7,
+    "avg_donations": 1.7,
+    "ratio": 0.91,
+    "flag": false
+   },
+   {
+    "group": "45\u201354",
+    "eligible": 834,
+    "selected": 143,
+    "rate": 0.171,
+    "avg_km": 17.7,
+    "avg_donations": 1.7,
+    "ratio": 0.75,
+    "flag": true
+   },
+   {
+    "group": "55+",
+    "eligible": 498,
+    "selected": 89,
+    "rate": 0.179,
+    "avg_km": 17.2,
+    "avg_donations": 1.4,
+    "ratio": 0.79,
+    "flag": true
+   }
+  ],
+  "by_area": [
+   {
+    "group": "Ampang",
+    "eligible": 330,
+    "selected": 22,
+    "rate": 0.067,
+    "avg_km": 19.6,
+    "avg_donations": 2.1,
+    "ratio": 0.22,
+    "flag": true
+   },
+   {
+    "group": "Cheras",
+    "eligible": 305,
+    "selected": 53,
+    "rate": 0.174,
+    "avg_km": 15.6,
+    "avg_donations": 1.4,
+    "ratio": 0.57,
+    "flag": true
+   },
+   {
+    "group": "Cyberjaya",
+    "eligible": 420,
+    "selected": 95,
+    "rate": 0.226,
+    "avg_km": 17.8,
+    "avg_donations": 1.9,
+    "ratio": 0.74,
+    "flag": true
+   },
+   {
+    "group": "Kajang",
+    "eligible": 275,
+    "selected": 53,
+    "rate": 0.193,
+    "avg_km": 17.6,
+    "avg_donations": 2.3,
+    "ratio": 0.63,
+    "flag": true
+   },
+   {
+    "group": "Klang",
+    "eligible": 284,
+    "selected": 41,
+    "rate": 0.144,
+    "avg_km": 21.7,
+    "avg_donations": 2.2,
+    "ratio": 0.47,
+    "flag": true
+   },
+   {
+    "group": "Kuala Lumpur",
+    "eligible": 270,
+    "selected": 61,
+    "rate": 0.226,
+    "avg_km": 15.0,
+    "avg_donations": 2.1,
+    "ratio": 0.74,
+    "flag": true
+   },
+   {
+    "group": "Petaling Jaya",
+    "eligible": 305,
+    "selected": 67,
+    "rate": 0.22,
+    "avg_km": 13.6,
+    "avg_donations": 1.5,
+    "ratio": 0.72,
+    "flag": true
+   },
+   {
+    "group": "Putrajaya",
+    "eligible": 450,
+    "selected": 138,
+    "rate": 0.307,
+    "avg_km": 17.3,
+    "avg_donations": 1.6,
+    "ratio": 1.0,
+    "flag": false
+   },
+   {
+    "group": "Seri Kembangan",
+    "eligible": 280,
+    "selected": 58,
+    "rate": 0.207,
+    "avg_km": 13.9,
+    "avg_donations": 1.7,
+    "ratio": 0.67,
+    "flag": true
+   },
+   {
+    "group": "Setapak",
+    "eligible": 340,
+    "selected": 54,
+    "rate": 0.159,
+    "avg_km": 21.0,
+    "avg_donations": 1.6,
+    "ratio": 0.52,
+    "flag": true
+   },
+   {
+    "group": "Shah Alam",
+    "eligible": 260,
+    "selected": 42,
+    "rate": 0.162,
+    "avg_km": 17.8,
+    "avg_donations": 1.0,
+    "ratio": 0.53,
+    "flag": true
+   },
+   {
+    "group": "Subang Jaya",
+    "eligible": 175,
+    "selected": 50,
+    "rate": 0.286,
+    "avg_km": 14.0,
+    "avg_donations": 2.1,
+    "ratio": 0.93,
+    "flag": false
+   }
+  ],
+  "by_distance": [
+   {
+    "group": "15 km +",
+    "eligible": 2224,
+    "selected": 245,
+    "rate": 0.11,
+    "avg_km": 23.2,
+    "avg_donations": 1.8,
+    "ratio": 0.21,
+    "flag": true
+   },
+   {
+    "group": "5\u201315 km",
+    "eligible": 1088,
+    "selected": 289,
+    "rate": 0.266,
+    "avg_km": 10.5,
+    "avg_donations": 1.7,
+    "ratio": 0.51,
+    "flag": true
+   },
+   {
+    "group": "< 5 km",
+    "eligible": 382,
+    "selected": 200,
+    "rate": 0.524,
+    "avg_km": 2.1,
+    "avg_donations": 1.8,
+    "ratio": 1.0,
+    "flag": false
+   }
+  ],
+  "age_flags": [
+   "45\u201354",
+   "55+"
+  ],
+  "area_flags": [
+   "Ampang",
+   "Cheras",
+   "Cyberjaya",
+   "Kajang",
+   "Klang",
+   "Kuala Lumpur",
+   "Petaling Jaya",
+   "Seri Kembangan",
+   "Setapak",
+   "Shah Alam"
+  ],
+  "explanation": "Flagged: 45\u201354 (avg 17.7 km, 1.7 past donations), 55+ (avg 17.2 km, 1.4 past donations) vs 17\u201324 (avg 16.5 km, 1.7 donations). Age is not used in the score, so the gap most likely comes from factors that differ between these groups \u2014 here distance and past donations (the 'regular donor' points). Options: cap the regular-donor points, or reserve a share of alerts for first-time donors \u2014 decide with the blood bank, then re-run this check.",
+  "note": "Age is not a scoring factor, so age-band selection rates should be similar. Area differences mostly follow distance to the centre, which is an intended factor (shorter trips \u2192 more donors actually come). Flags use the four-fifths rule and need human review, not automatic changes."
+ }
+}

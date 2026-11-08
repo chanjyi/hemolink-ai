@@ -1,0 +1,33 @@
+# Render Blueprint — free web service (512 MB RAM, sleeps after 15 min idle, data resets on restart).
+# Photo reading (OCR) is switched off here to fit the free plan; everything else works.
+# Values marked "sync: false" are asked for when you create the Blueprint (leave blank to skip).
+services:
+  - type: web
+    name: hemolink-ai
+    runtime: python
+    plan: free
+    buildCommand: >-
+      grep -v rapidocr requirements.txt > requirements-render.txt &&
+      pip install -r requirements-render.txt &&
+      python scripts/train_models.py --quick
+    startCommand: uvicorn app:app --host 0.0.0.0 --port $PORT --proxy-headers --forwarded-allow-ips "*"
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: HEMOLINK_ENV
+        value: production
+      - key: HEMOLINK_SECRET_KEY
+        generateValue: true
+      - key: HEMOLINK_DATA_KEY          # encrypts uploaded blood test files
+        generateValue: true
+      - key: HEMOLINK_OCR
+        value: "off"
+      - key: HEMOLINK_SOURCE_URL        # your public GitHub repo (AGPL "Source code" link)
+        sync: false
+      - key: HEMOLINK_APP_URL           # this site's link, e.g. https://hemolink-ai.onrender.com
+        sync: false
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: GEMINI_API_KEY             # optional: AI explanations
+        sync: false
