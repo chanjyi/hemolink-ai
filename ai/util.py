@@ -45,3 +45,15 @@ def js_round(x: float) -> int:
 
 def round1(x: float) -> float:
     return js_round(x * 10) / 10
+
+
+_TITLES = {"dr", "prof", "dato", "dato'", "datin", "datuk", "puan", "encik", "en", "cik", "mr", "mrs", "ms", "miss"}
+
+
+def first_name(name: str) -> str:
+    """'Dr. Sara Tan (Demo)' → 'Sara' (skips titles)."""
+    words = [w for w in (name or "").split() if w]
+    for w in words:
+        if w.lower().rstrip(".") not in _TITLES:
+            return w.strip("(),")
+    return name or ""

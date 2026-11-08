@@ -27,6 +27,7 @@ from fastapi.responses import FileResponse, HTMLResponse, Response
 from pydantic import BaseModel, Field
 
 from ai.hemoscan import interpret, rules
+from ai.util import first_name
 from ai.hemoscan import samples as sample_reports
 from ai.hemoscan.biomarkers import BY_KEY, CATALOG, ORDER, UNIT_CHOICES, to_canonical
 from ai.hemocare import knowledge
@@ -77,7 +78,7 @@ def confirm_report(db, report: dict, user: dict, report_date: str, sex: str, lab
     donations = db.execute("SELECT COUNT(*) FROM donations WHERE donor_id=? AND donated_on>=? AND donated_on<=?",
                            (user["id"], since, report_date)).fetchone()[0]
     analysis = rules.analyse(results, sex, prev, prev_date, donations_last_year=donations, is_donor=user["role"] == "donor")
-    explanation, used_llm = interpret.explain(analysis, user["name"].split(" ")[0])
+    explanation, used_llm = interpret.explain(analysis, first_name(user["name"]))
     analysis["doctor_questions"] = interpret.doctor_questions(analysis)
     db.execute("DELETE FROM hemo_results WHERE report_id=?", (report["id"],))
     for x in analysis["results"]:

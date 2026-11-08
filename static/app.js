@@ -78,6 +78,9 @@ const e = (x) =>
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#39;");
+// "Dr. Sara Tan (Demo)" → "Sara": skip titles such as Dr, Prof, Dato'
+const TITLES = /^(dr|prof|dato'?|datin|datuk|tan sri|puan|encik|en|cik|mr|mrs|ms|miss)\.?$/i;
+const firstName = (name) => (String(name || "").split(/\s+/).find((w) => w && !TITLES.test(w)) || String(name || "")).replace(/[(),]/g, "");
 const loc = () => (state.lang === "ms" ? "ms-MY" : "en-MY");
 const dateLabel = (d) =>
   new Date(d + "T12:00:00").toLocaleDateString(loc(), { day: "numeric", month: "short", year: "numeric" });
@@ -424,7 +427,7 @@ async function donorDashboard() {
   state.overview = o;
   state.campaigns = c;
   state.notifications = notes;
-  const first = e(state.user.name.split(" ")[0]);
+  const first = e(firstName(state.user.name));
   const total = o.my_donations;
   const next = MILESTONES.find((m) => m > total) || total + 25;
   const prev = [...MILESTONES].reverse().find((m) => m <= total) || 0;
@@ -492,7 +495,7 @@ async function dashboard() {
         ? `<section class="shortage-banner red slim"><div><div class="banner-tags"><span class="tag tag-red">${icon("alert", "icon-sm")} Urgent request</span></div><h2>A blood bank needs your help</h2><p>${o.my_open_alerts} urgent request${o.my_open_alerts > 1 ? "s are" : " is"} waiting for your reply.</p></div><button class="btn btn-primary" data-view="notifications">Reply in Notifications ${icon("arrow", "icon-sm")}</button></section>`
         : ""
       : shortageBanner((await api("/api/outlook")).most_urgent);
-  const first = e(state.user.name.split(" ")[0]);
+  const first = e(firstName(state.user.name));
   const intro =
     role === "donor"
       ? "Find meaningful donation opportunities near you, all in one place."
@@ -1144,7 +1147,7 @@ async function reportsPage() {
  ${r.at_risk.length ? `<div class="table-wrap"><table class="data-table"><thead><tr><th>Donor</th><th>Type</th><th>Donations</th><th>Last</th><th>Return</th></tr></thead><tbody>${r.at_risk
    .map((x) => `<tr><td><b>${e(x.name)}</b><div class="muted tiny" style="margin-top:4px">Main factor: ${e(x.top_factor.toLowerCase())}</div></td><td>${e(x.blood_type)}</td><td>${x.donations}</td><td>${x.days_since_last}d ago</td><td><span class="tag ${x.p_return < 0.2 ? "tag-red" : "tag-amber"}">${Math.round(x.p_return * 100)}%</span></td></tr>`)
    .join("")}</tbody></table></div>` : empty("users", "No drifting donors", "Everyone nearby looks likely to return.")}
- ${msg ? `<div class="explain"><div class="banner-tags">${aiTag("Suggested message")}</div><p><i>“Hi ${e(msg.name.split(" ")[0])}, it's been a while — thank you for your ${msg.donations} donations so far! ${e(msg.blood_type)} blood is needed at ${e(r.centre.name)} this month. Book a 30-minute slot in HemoLink.”</i></p></div>` : ""}</div>
+ ${msg ? `<div class="explain"><div class="banner-tags">${aiTag("Suggested message")}</div><p><i>“Hi ${e(firstName(msg.name))}, it's been a while — thank you for your ${msg.donations} donations so far! ${e(msg.blood_type)} blood is needed at ${e(r.centre.name)} this month. Book a 30-minute slot in HemoLink.”</i></p></div>` : ""}</div>
  <div class="stack"><div class="surface panel"><div class="panel-title"><h3>Model card</h3><span class="tag tag-gray">Logistic regression</span></div><div class="method-list">
  <div>${icon("users", "icon-sm")} <strong>Trained on:</strong> ${m.train_size} donors · tested on ${m.test_size} held out</div>
  <div>${icon("trend", "icon-sm")} <strong>AUC:</strong> ${m.auc.toFixed(2)} · <strong>Accuracy:</strong> ${Math.round(m.accuracy * 100)}%</div></div>

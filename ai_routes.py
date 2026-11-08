@@ -33,7 +33,7 @@ from ai.schemas import (
     Profile,
     UrgentRequest,
 )
-from ai.util import haversine_km
+from ai.util import first_name, haversine_km
 from app import connect, only, rows, user_from_request
 from seed import BLOOD_TYPES
 
@@ -411,7 +411,7 @@ def eligibility_check(body: CheckBody, user=Depends(only("donor"))):
     with connect() as db:
         h = my_health(db, user)
     result = eligibility.evaluate(h, today(), body.answers)
-    explained = ai_assistant.explain(result, user["name"].split(" ")[0])
+    explained = ai_assistant.explain(result, first_name(user["name"]))
     return {"result": result.model_dump(), "label": eligibility.VERDICT_LABEL[result.verdict],
             "explanation": explained.explanation, "used_llm": explained.used_llm, "note": eligibility.RULES["sourceNote"]}
 
@@ -653,7 +653,7 @@ def assistant_answer(question: str, user: dict) -> dict:
                 h = my_health(db, user)
                 r = eligibility.evaluate(h, today())
                 label = eligibility.VERDICT_LABEL[r.verdict]
-                context = (f"\n\nContext about this donor (from the rules engine, do not change it): name {user['name'].split(' ')[0]}, "
+                context = (f"\n\nContext about this donor (from the rules engine, do not change it): name {first_name(user['name'])}, "
                            f"blood type {h.blood_type}, {len(h.donations)} past donations, current status \"{label}\""
                            + (f", eligible from {r.eligible_from}" if r.eligible_from else "") + ".")
                 summary = (f"Based on your record you can donate now — your last donation was {r.days_since_last} days ago."
