@@ -13,7 +13,7 @@ from . import llm
 from .eligibility import VERDICT_LABEL, template_explanation
 from .schemas import AssistantReply, AssistantRequest, EligibilityResult, ExplainReply
 
-SYSTEM = """You are HemoSync Assistant, a friendly helper inside a blood donation app in Malaysia.
+SYSTEM = """You are HemoLink Assistant, a friendly helper inside a blood donation app in Malaysia.
 Rules:
 - Only talk about blood donation: eligibility in general terms, the donation process, preparation, after-care, booking, and how blood is used.
 - Never diagnose, never give medication or treatment advice, never interpret test results. For any personal medical question say that blood bank staff or a doctor must decide.
