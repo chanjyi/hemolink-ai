@@ -23,8 +23,8 @@ services:
         generateValue: true
       - key: HEMOLINK_OCR
         value: "off"
-      - key: HEMOLINK_SOURCE_URL        # your public GitHub repo (AGPL "Source code" link)
-        sync: false
+      - key: HEMOLINK_SOURCE_URL        # public GitHub repo (AGPL "Source code" link)
+        value: https://github.com/chanjyi/hemolink-ai
       - key: HEMOLINK_APP_URL           # this site's link, e.g. https://hemolink-ai.onrender.com
         sync: false
       - key: LLM_PROVIDER
