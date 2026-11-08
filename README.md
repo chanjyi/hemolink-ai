@@ -1,4 +1,4 @@
-# HemoLink AI v6.1
+# HemoLink AI 
 
 **See the blood shortage before it happens, and alert the donors most likely to come.**
 Hackathon prototype for DSH Hacks V2 (AI × Healthcare) · Python FastAPI + SQLite + scikit-learn + responsive HTML/CSS/JavaScript
