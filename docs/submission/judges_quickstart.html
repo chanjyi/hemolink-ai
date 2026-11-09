@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>HemoLink AI — Judges' quick start</title>
+<style>
+  @page { size: A4; margin: 0; }
+  :root { --red: #a51d2c; --red2: #c4283a; --ink: #2f211b; --muted: #6f5a4e; --line: #ead8c2; --cream: #fbf4ea; --card: #fffdf9; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 210mm; height: 297mm; }
+  body { font-family: "Inter", sans-serif; color: var(--ink); background: var(--cream); font-size: 8.4pt; line-height: 1.36; }
+  .page { width: 210mm; height: 297mm; display: flex; flex-direction: column; overflow: hidden; }
+  header { background: linear-gradient(120deg, #8e1524, var(--red2)); color: #fff; padding: 5.4mm 12mm 4.8mm; }
+  .kicker { font-size: 7.6pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; opacity: .9; }
+  h1 { font-family: "Inter Display", "Inter"; font-size: 20pt; font-weight: 800; letter-spacing: -.02em; margin-top: 1mm; }
+  .link { margin-top: 2.4mm; background: #fff; color: var(--red); border-radius: 3mm; padding: 2mm 4mm; display: flex; justify-content: space-between; align-items: center; gap: 4mm; }
+  .link b { font-size: 13pt; font-weight: 800; word-break: break-all; }
+  .link span { font-size: 7.8pt; color: var(--muted); text-align: right; }
+  main { padding: 4mm 12mm 0; display: flex; flex-direction: column; gap: 3mm; flex: 1; }
+  h2 { font-family: "Inter Display", "Inter"; font-size: 10.6pt; font-weight: 800; color: var(--red); margin-bottom: 1.4mm; }
+  table { width: 100%; border-collapse: collapse; background: var(--card); border: 1.2px solid var(--line); border-radius: 3mm; overflow: hidden; }
+  th, td { text-align: left; padding: 1.3mm 2.6mm; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 7.2pt; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); background: #f6ead9; }
+  tr:last-child td { border-bottom: 0; }
+  code { font-family: "DejaVu Sans Mono", monospace; font-size: 7.8pt; background: #f3e5d3; border-radius: 1.2mm; padding: .2mm 1.2mm; }
+  .tours { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3mm; }
+  .tour { background: var(--card); border: 1.2px solid var(--line); border-radius: 3mm; padding: 2.4mm 3mm; }
+  .tour h3 { font-size: 10pt; font-weight: 800; margin-bottom: .4mm; }
+  .tour .who { font-size: 7.4pt; color: var(--muted); margin-bottom: 1.8mm; }
+  ol { padding-left: 4.2mm; }
+  li { margin: .6mm 0; font-size: 8pt; }
+  li::marker { color: var(--red); font-weight: 800; }
+  .btn { display: inline-block; background: #fbe4e1; color: var(--red); font-weight: 700; border-radius: 99px; padding: 0 1.6mm; font-size: 7.8pt; }
+  .tips { display: grid; grid-template-columns: 1fr 1fr; gap: 2mm; }
+  .tip { background: var(--card); border: 1.2px solid var(--line); border-radius: 3mm; padding: 1.8mm 3mm; font-size: 7.8pt; }
+  .tip b { color: var(--red); }
+  footer { margin: 2.4mm 12mm 5mm; padding-top: 1.6mm; border-top: 1px solid var(--line); font-size: 7pt; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <div class="kicker">DSH Hacks V2 · AI × Healthcare · Judges' quick start</div>
+    <h1>Try HemoLink AI in 2 minutes</h1>
+    <div class="link"><b>{{LIVE_URL}}</b><span>Works on a laptop or phone.<br/>The first visit can take ~1 minute to wake the server.</span></div>
+  </header>
+
+  <main>
+    <section>
+      <h2>Demo accounts — one click on the sign-in page</h2>
+      <table>
+        <tr><th>Role</th><th>Email</th><th>Password</th><th>Who it is</th></tr>
+        <tr><td><b>Donor</b></td><td><code>donor@demo.com</code></td><td><code>Demo123!</code></td><td>Amira, a regular donor in Cyberjaya</td></tr>
+        <tr><td><b>Drive organizer</b></td><td><code>organizer@demo.com</code></td><td><code>Demo123!</code></td><td>Daniel, who runs campus and community drives</td></tr>
+        <tr><td><b>Blood bank admin</b></td><td><code>admin@demo.com</code></td><td><code>Demo123!</code></td><td>Dr. Sara Tan at a blood bank centre</td></tr>
+      </table>
+      <p style="font-size:7.8pt;color:var(--muted);margin-top:1.4mm">Or just tap <b>Donor</b>, <b>Organizer</b> or <b>Admin</b> under "Role selection" on the sign-in page. Tip: open the admin in one window and the donor in a private window to watch an alert arrive.</p>
+    </section>
+
+    <section>
+      <h2>Three short tours</h2>
+      <div class="tours">
+        <div class="tour">
+          <h3>1 · Blood bank</h3><div class="who">The AI shortage outlook and donor matching</div>
+          <ol>
+            <li>The dashboard warns <b>O− is already below the safe level</b>, and says why.</li>
+            <li>Click <span class="btn">Mobilise O− donors</span> → <span class="btn">Find matching donors</span>. Each donor gets a score with the reasons behind it.</li>
+            <li><span class="btn">Send alerts</span> → <span class="btn">Simulate donor replies (demo)</span> → <span class="btn">Mark donated</span>. Stock goes up.</li>
+            <li><b>AI Models</b>: forecast accuracy, the fairness check and the PDN rules.</li>
+          </ol>
+        </div>
+        <div class="tour">
+          <h3>2 · Donor</h3><div class="who">Find, check, book, and understand your blood test</div>
+          <ol>
+            <li><b>Find Campaigns</b> → <span class="btn">Use my location</span>: map, distances, <span class="btn">Book a slot</span>.</li>
+            <li><b>Eligibility Check</b>: 15 questions; the rules decide and the AI explains the result.</li>
+            <li><b>HemoScan AI</b> → open a past report, or try a <i>fictional sample</i> PDF.</li>
+            <li><b>Notifications</b> → answer an urgent request with <span class="btn">I can come</span>.</li>
+          </ol>
+        </div>
+        <div class="tour">
+          <h3>3 · Drive organizer</h3><div class="who">Plan drives where the blood is needed</div>
+          <ol>
+            <li><b>Insights &amp; Planner</b>: where and when to hold the next drive, and regular donors to invite back.</li>
+            <li><span class="btn">Create this campaign</span>, then drop a pin on the map (or <i>Find venue on map</i>).</li>
+            <li><b>Bookings &amp; Check-in</b>: mark donors as donated or no-show.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Also worth a look</h2>
+      <div class="tips">
+        <div class="tip"><b>EN | BM</b> in the top bar switches the whole app to Bahasa Malaysia, including dates and alerts.</div>
+        <div class="tip"><b>On a phone</b>, use the bottom tab bar, or add HemoLink to the home screen as an app.</div>
+        <div class="tip"><b>My Profile</b> has alert settings (email / SMS / push) and the PDPA tools: download or delete my data.</div>
+        <div class="tip"><b>Privacy by design:</b> sign in as admin or organizer and try to find a donor's HemoScan report. You can't.</div>
+      </div>
+    </section>
+    <section>
+      <h2>Where to see each judging criterion</h2>
+      <table>
+        <tr><th style="width:26%">Criterion</th><th>Where to look</th></tr>
+        <tr><td><b>Technical depth</b></td><td>Admin → <b>AI Models</b>: 70 forecast series trained on MOH data, each picking the best of 3 methods by rolling cross-validation; return model AUC 0.85; 54 automated tests</td></tr>
+        <tr><td><b>Clinical insight</b></td><td>Eligibility rules from Pusat Darah Negara's donor form (sources on the page); HemoScan flags patterns but never diagnoses; HemoCare medicine waiting periods</td></tr>
+        <tr><td><b>Real-world impact</b></td><td>Shortage warnings days early; alerts sent only to the donors most likely to come; fewer donors turned away on the day</td></tr>
+        <tr><td><b>Feasibility</b></td><td>Runs on a free server and on phones; works without an AI key (built-in templates); PDPA consent, data export and deletion</td></tr>
+        <tr><td><b>Creativity</b></td><td>One loop joining donors, organizers and blood banks; a fairness check on who gets alerted; English and Bahasa Malaysia</td></tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    Student prototype — not a medical device. Blood stock, centres and the 300 background donors are simulated; donation trends use real Ministry of Health Malaysia data (CC BY 4.0).
+    Please don't enter real health information. The demo data resets when the server restarts. Code: {{REPO_URL}} (AGPL-3.0).
+  </footer>
+</div>
+</body>
+</html>
