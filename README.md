@@ -10,8 +10,17 @@ Centre's (PDN) rules, and helps donors understand their own blood tests — in E
 Built for **DSH Hacks V2 (AI × Healthcare)** · Python FastAPI · SQLite · scikit-learn · HTML/CSS/JavaScript ·
 optional Gemini / Claude / OpenAI for plain-language explanations.
 
-<!-- Live demo: add the Render link here after deploying -->
-Judges and first-time visitors: see **`docs/submission/HemoLink-judges-quickstart.pdf`** for a 2-minute tour.
+**Live demo: https://hemolink-ai.onrender.com** — tap *Donor*, *Organizer* or *Admin* on the sign-in page (the first
+visit can take about a minute while the free server wakes up).
+
+**Submission materials**
+
+| | |
+|---|---|
+| One-page project description | [HemoLink-project-description.pdf](docs/submission/HemoLink-project-description.pdf) |
+| 2-minute tour for judges | [HemoLink-judges-quickstart.pdf](docs/submission/HemoLink-judges-quickstart.pdf) |
+<!-- | Demo video | [Watch on YouTube](PASTE-YOUR-VIDEO-LINK-HERE) | -->
+| Source code | This repository (AGPL-3.0) |
 
 | Blood bank | Donor | HemoScan |
 |---|---|---|
@@ -136,18 +145,41 @@ Full results: Admin → **AI Models**, and `docs/MODEL_REPORT.md` (written by `s
 
 ## Run it on your computer
 
-From the `hemolink` folder (Windows, Anaconda or VS Code terminal):
+Needs **Python 3.11** (3.10–3.12 also work). Open a terminal in the `hemolink` folder, then follow your system.
+
+**Windows** (PowerShell, Anaconda Prompt or the VS Code terminal):
 
 ```powershell
-conda create -n hemolink python=3.11 -y
-conda activate hemolink
+py -3.11 -m venv .venv
+.venv\Scripts\activate
 pip install -r requirements.txt
 python scripts/train_models.py     # optional, ~2 min: trains and saves the forecasting models
 uvicorn app:app --reload
 ```
 
-Open **http://127.0.0.1:8000** (API docs: `/api/docs`). Without Anaconda: `py -3.11 -m venv .venv`,
-`.venv\Scripts\activate`, then the same `pip` and `uvicorn` lines.
+If PowerShell refuses to run `activate`, run `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` once, or use
+Command Prompt with `.venv\Scripts\activate.bat`.
+
+**macOS** (Terminal; works on Apple Silicon and Intel):
+
+```bash
+brew install python@3.11           # or install Python 3.11 from python.org
+python3.11 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python scripts/train_models.py     # optional, ~2 min
+uvicorn app:app --reload
+```
+
+**Linux** (Ubuntu/Debian): `sudo apt install python3.11 python3.11-venv`, then the same lines as macOS from
+`python3.11 -m venv .venv`.
+
+**With Anaconda** (any system): `conda create -n hemolink python=3.11 -y`, `conda activate hemolink`, then the
+`pip`, `python` and `uvicorn` lines above.
+
+Open **http://127.0.0.1:8000** (API docs: `/api/docs`). Next time, just activate the environment again
+(`.venv\Scripts\activate` on Windows, `source .venv/bin/activate` on macOS/Linux) and run `uvicorn app:app --reload`.
+Stop the server with **Ctrl + C**.
 
 **Demo accounts** — one click on the sign-in page, or password `Demo123!`:
 
@@ -221,8 +253,8 @@ All write requests need the header `X-HemoLink-Request: app`; sessions use signe
 
 ## Tests
 
-```powershell
-python -m pytest -q
+```bash
+python -m pytest -q        # with the environment activated (Windows, macOS or Linux)
 ```
 
 55 tests cover accounts and roles, booking, the AI features, PDN eligibility rules, forecasting and model selection,
